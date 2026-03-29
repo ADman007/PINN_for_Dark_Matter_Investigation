@@ -49,9 +49,9 @@ Below are the training curves for the VGG12 and LeNet architectures, illustratin
 | Model Architecture | Training Curve |
 |-------------------|----------------|
 | **EfficientNet_b1**            | <img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/efficientNet_b1_training.png" width="450" alt="Training Curve"> |
-| **ResNet-34**             |<img src="[https://github.com/Vishak-Bhat30/ML4SCI_24/assets/102585626/3c486ed0-c3d8-4e37-8ed7-87f5818cbfa3](https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/resnet_34_training.png)" width="450" alt="Training Curve"> |
-| **ResNet-18**             |<img src="[https://github.com/Vishak-Bhat30/ML4SCI_24/assets/102585626/12cbc9a7-317a-4949-ba66-4a28a31ee367](https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/resnet_18_training.png)" width="450" alt="Training Curve"> |
-| **EfficientNet_b0**             |<img src="[https://github.com/Vishak-Bhat30/ML4SCI_24/assets/102585626/9bd8f6ed-6029-47a4-8ddf-0298b67cd07a](https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/efficientNet_b0_training.png)" width="450" alt="Training Curve"> |
+| **ResNet-34**             |<img src="[https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/resnet_34_training.png]" width="450" alt="Training Curve"> |
+| **ResNet-18**             |<img src="[https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/resnet_18_training.png]" width="450" alt="Training Curve"> |
+| **EfficientNet_b0**             |<img src="[https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/efficientNet_b0_training.png]" width="450" alt="Training Curve"> |
 
 
 **Observation:** The training curves indicate that careful monitoring of both train and validation losses is crucial to prevent overfitting and to choose the optimal model state for deployment.
