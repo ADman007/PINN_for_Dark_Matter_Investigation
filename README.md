@@ -44,14 +44,14 @@ All models were initialized with **pretrained ImageNet weights**, and the final 
 
 During the training of both models, it was observed that the models started to overfit after approximately 10 epochs. The models were saved at the point where the gap between the train loss and the validation loss was minimal. This strategy helped achieve an accuracy of around 73% on the validation set for both models.
 
-Below are the training curves for the VGG12 and LeNet architectures, illustrating the point of overfitting and the epoch at which the models were saved.
+Below are the training curves of the all the models, illustrating the nature of their convergence.
 
-| Model Architecture | Training Curve |
-|-------------------|----------------|
-| **EfficientNet_b1**            | <img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/efficientNet_b1_training.png" width="450" alt="Training Curve_1"> |
-| **ResNet-34**             |<img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/resnet_34_training.png" width="450" alt="Training Curve_2"> |
-| **ResNet-18**             |<img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/resnet_18_training.png" width="450" alt="Training Curve_3"> |
-| **EfficientNet_b0**             |<img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/efficientNet_b0_training.png" width="450" alt="Training Curve_4"> |
+| Model Architecture | Training Curve | **Confusion__matrix** | 
+|-------------------|----------------|----------------|
+| **EfficientNet_b1**            | <img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/efficientNet_b1_training.png" width="450" alt="Training Curve_1"> | <img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/confusion_matrix/efficientNet_b1_cm.png" width="450" alt="Training Curve_1"> |
+| **ResNet-34**             |<img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/resnet_34_training.png" width="450" alt="Training Curve_2"> | <img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/confusion_matrix/resnet_34_cm.png"> |
+| **ResNet-18**             | <img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/resnet_18_training.pn" width="450" alt="Training Curve_3"> |   <img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/confusion_matrix/resnet_18_cm.png"> |
+| **EfficientNet_b0**             |<img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/efficientNet_b0_training.png" width="450" alt="Training Curve_4"> |  <img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/confusion_matrix/efficientNet_b0_cm.png"> |
 
 
 **Observation:** The training curves indicate that careful monitoring of both train and validation losses is crucial to prevent overfitting and to choose the optimal model state for deployment.
