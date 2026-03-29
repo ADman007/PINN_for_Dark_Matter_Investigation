@@ -50,9 +50,31 @@ Below are the training curves of the all the models, illustrating the nature of 
 |-------------------|----------------|----------------|
 | **EfficientNet_b1**            | <img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/efficientNet_b1_training.png" width="450" alt="Training Curve_1"> | <img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/confusion_matrix/efficientNet_b1_cm.png" width="450" alt="Training Curve_1"> |
 | **ResNet-34**             |<img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/resnet_34_training.png" width="450" alt="Training Curve_2"> | <img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/confusion_matrix/resnet_34_cm.png"> |
-| **ResNet-18**             | <img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/resnet_18_training.pn" width="450" alt="Training Curve_3"> |   <img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/confusion_matrix/resnet_18_cm.png"> |
+| **ResNet-18**             | <img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/resnet_18_training.png" width="450" alt="Training Curve_3"> |   <img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/confusion_matrix/resnet_18_cm.png"> |
 | **EfficientNet_b0**             |<img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/efficientNet_b0_training.png" width="450" alt="Training Curve_4"> |  <img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/confusion_matrix/efficientNet_b0_cm.png"> |
 
+<table>
+  <tr>
+    <td align="center"><b>Row 1, Col 1</b></td>
+    <td align="center"><b>Row 1, Col 2</b><br><img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/efficientNet_b1_training.png" width="100%"></td>
+    <td align="center"><b>Row 1, Col 3</b><br><img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/confusion_matrix/efficientNet_b1_cm.png" width="100%"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Row 2, Col 1</b><br></td>
+    <td align="center"><b>Row 2, Col 2</b><br><img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/resnet_34_training.png" width="100%"></td>
+    <td align="center"><b>Row 2, Col 3</b><br><img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/confusion_matrix/resnet_34_cm.png" width="100%"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Row 3, Col 1</b><br></td>
+    <td align="center"><b>Row 3, Col 2</b><br><img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/resnet_18_training.png" width="100%"></td>
+    <td align="center"><b>Row 3, Col 3</b><br><img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/confusion_matrix/resnet_18_cm.png" width="100%"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Row 4, Col 1</b><br></td>
+    <td align="center"><b>Row 4, Col 2</b><br><img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/efficientNet_b0_training.png" width="100%"></td>
+    <td align="center"><b>Row 4, Col 3</b><br><img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/confusion_matrix/efficientNet_b0_cm.png" width="100%"></td>
+  </tr>
+</table>
 
 **Observation:** The training curves indicate that careful monitoring of both train and validation losses is crucial to prevent overfitting and to choose the optimal model state for deployment.
 
