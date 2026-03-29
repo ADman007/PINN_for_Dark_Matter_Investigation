@@ -46,13 +46,13 @@ During the training of both models, it was observed that the models started to o
 
 Below are the training curves of the all the models, illustrating the nature of their convergence.
 
-| Model Architecture | Training Curve | **Confusion__matrix** | 
+
 
 <table>
   <tr>
-    <td align="center"><b> **Models** </b><br></td>
-    <td align="center"><b> **Training Curve** </b><br></td>
-    <td align="center"><b> **Confusion Matrix** </b><br></td>
+    <td align="center"><b> Models </b><br></td>
+    <td align="center"><b> Training Curve </b><br></td>
+    <td align="center"><b> Confusion Matrix </b><br></td>
   </tr>
   <tr>
     <td align="center"><b>EfficientNet-B1</b><br></td>
