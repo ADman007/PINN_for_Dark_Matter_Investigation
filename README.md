@@ -48,10 +48,10 @@ Below are the training curves for the VGG12 and LeNet architectures, illustratin
 
 | Model Architecture | Training Curve |
 |-------------------|----------------|
-| **EfficientNet_b1**            | <img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/efficientNet_b1_training.png" width="450" alt="Training Curve"> |
-| **ResNet-34**             |<img src="[https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/resnet_34_training.png]" width="450" alt="Training Curve"> |
-| **ResNet-18**             |<img src="[https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/resnet_18_training.png]" width="450" alt="Training Curve"> |
-| **EfficientNet_b0**             |<img src="[https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/efficientNet_b0_training.png]" width="450" alt="Training Curve"> |
+| **EfficientNet_b1**            | <img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/efficientNet_b1_training.png" width="450" alt="Training Curve_1"> |
+| **ResNet-34**             |<img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/resnet_34_training.png" width="450" alt="Training Curve_2"> |
+| **ResNet-18**             |<img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/resnet_18_training.png" width="450" alt="Training Curve_3"> |
+| **EfficientNet_b0**             |<img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/training_curves/efficientNet_b0_training.png" width="450" alt="Training Curve_4"> |
 
 
 **Observation:** The training curves indicate that careful monitoring of both train and validation losses is crucial to prevent overfitting and to choose the optimal model state for deployment.
