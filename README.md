@@ -24,7 +24,7 @@ Five CNN-based architectures were experimented with for performance comparison:
 5. **EfficientNet-B1**  
 7. **Ensemble of the above four models**
 
-All models were initialized with **pretrained ImageNet weights**, and the final fully connected layer was replaced to match the number of classes. Models were trained using **cross-entropy loss** and the **Adam optimizer**, with validation accuracy used for model selection.  
+All models were initialized with **pretrained ImageNet weights**, and the final fully connected layer was replaced to match the number of classes. Models were trained using **cross-entropy loss** and the **Adam optimizer**, with validation accuracy used for model selection. The ensemble employs **soft voting** by averaging the raw probability predictions from all four models for each input image to determine the final classification.
 
 ### Results 
 
@@ -43,9 +43,9 @@ All models were initialized with **pretrained ImageNet weights**, and the final 
 
 ### Results and Analysis
 
-During the training of both models, it was observed that the models started to overfit after approximately 10 epochs. The models were saved at the point where the gap between the train loss and the validation loss was minimal. This strategy helped achieve an accuracy of around 73% on the validation set for both models.
+Models were trained for 50 epochs with checkpoints saved at maximum validation accuracy. This strategy effectively mitigated overfitting and secured >95% validation accuracy for the ResNet and EfficientNet variants.
 
-Below are the training curves of the all the models, illustrating the nature of their convergence.
+The following plots display the loss and accuracy trajectories for each model, illustrating their convergence rates and the effectiveness of the training strategy.
 
 
 
@@ -76,6 +76,7 @@ Below are the training curves of the all the models, illustrating the nature of 
     <td align="center"><br><img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/common_task/confusion_matrix/efficientNet_b0_cm.png" width="100%"></td>
   </tr>
 </table>
+
 
 **Observation:** The training curves indicate that careful monitoring of both train and validation losses is crucial to prevent overfitting and to choose the optimal model state for deployment.
 
