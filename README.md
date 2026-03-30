@@ -83,24 +83,39 @@ The following plots display the loss and accuracy trajectories for each model, i
 ---
 ## Specific Test VII. Physics-Guided ML 
 
-### Findings  
+### My Approach 
 The results are measured based on the following parameters:
 
-- `dtype`: `float16`
-- `torch.compile` with mode `reduce-overhead`.
-- ODE Solver used is `Euler` with `50` timesteps.   
+1. Encoder:
+  * I use a pre-trained ResNet-34 model as the primary encoder to extract features from the observed gravitational lensing images.
+  * This encoder is specifically designed to predict the physical parameters—primarily the Einstein radius ($\theta_E$), necessary for the reconstruction phase.
 
-| Model           | FID  | ODE Timesteps | Latency | Batch Size |
-|---------------|------|---------------|---------|------------|
-| **Transformer** | 27.6961 | 50          | 109ms   | 1          |
-| **UNet**      | 34.8437 | 50            | 123ms   | 1          |
+2. Physics-Informed Lensing Layer:
+  * I implement a custom differentiable Lensing Layer that incorporates the governing lens equation to compute angular deflections.
+  * Using the predicted Einstein radius, the model analytically reconstructs the original source images by mapping pixels from the observed plane back to the source plane.
+  * This step integrates domain-specific physical constraints into the deep learning pipeline, allowing the model to explicitly "undo" the distortion caused by gravitational lensing.
 
-### Model Architecture  
-A Flow Matching model was implemented and trained using two different backbones for performance comparison:
+3. Classifier:
+  * After reconstructing the source images, I use a pre-trained EfficientNet-b0 model solely on these reconstructed images.
+  * The reconstructed images are passed through a dedicated encoder that performs the final classification task.
+  * By isolating the source morphology from the lensing effects, the model can more accurately categorize the underlying astronomical objects based on their true physical structure. 
 
-1. **UNet Backbone**  
-   - Utilizes a ResNet-34 encoder with pretrained ImageNet weights.  
+### Results 
 
-2. **Transformer Backbone**  
-   - Based on a Vision Transformer (ViT) architecture with pretrained ImageNet weights.  
+#### AUC Scores  (in descending order of Macro AUC )
+| Model            | No Substructure | Sphere Substructure | Vortex Substructure | Macro AUC | 
+|-----------------|----------------|----------------------|----------------------|-------|
+| **Approach_1**   | 0.9990         | 0.9980                | 0.9998                 | 0.9989 |
 
+<table>
+  <tr>
+    <td align="center"><b> ROC_AUC </b><br></td>
+    <td align="center"><b> Training Curve </b><br></td>
+    <td align="center"><b> Confusion Matrix </b><br></td>
+  </tr>
+  <tr>
+    <td align="center"><br><img src=""></td>
+    <td align="center"><br><img src=""></td>
+    <td align="center"><br><img src="" width="100%"></td>
+  </tr>
+</table>
