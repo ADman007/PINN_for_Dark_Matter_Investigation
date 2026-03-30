@@ -22,20 +22,21 @@ Five CNN-based architectures were experimented with for performance comparison:
 2. **ResNet-34**
 4. **EfficientNet-B0**
 5. **EfficientNet-B1**  
-7. **Ensemble of best ResNet and EfficientNet**
+7. **Ensemble of the above four models**
 
 All models were initialized with **pretrained ImageNet weights**, and the final fully connected layer was replaced to match the number of classes. Models were trained using **cross-entropy loss** and the **Adam optimizer**, with validation accuracy used for model selection.  
 
 ### Results 
 
 #### AUC Scores  (in descending order of Macro AUC )
-| Model            | No Substructure | Sphere Substructure | Vortex Substructure | Macro AUC | Test_Accuracy |
-|-----------------|----------------|----------------------|----------------------|-------|-------|
-| **EfficientNet-B1**   | 0.99           | 0.99                 | 1.00      | 0.9944 | 0.9636 |
-| **ResNet-34** | 0.99      | 0.99                 | 1.00       | 0.9930    | 0.9544 |
-| **ResNet-18**   | 0.99           | 0.99                 | 1.00                 | 0.9925 |  0.9507   |
-| **EfficientNet-B0**   | 0.98           | 0.97                 | 0.99           | 0.9821 | 0.8909  |
-| **Ensemble**   | 0.00          | 0.00                | 0.00                 | 0.00 |   0.00    |
+| Model            | No Substructure | Sphere Substructure | Vortex Substructure | Macro AUC | 
+|-----------------|----------------|----------------------|----------------------|-------|
+| **Ensemble**   | 0.9957         | 0.9935                | 0.9987                 | 0.9960 |
+| **EfficientNet-B0**   | 0.9952           | 0.9909                 | 0.9971           | 0.9944 |
+| **ResNet-34** | 0.9940      | 0.9906                 | 0.9976       | 0.9941    |
+| **ResNet-18**   | 0.9936           | 0.9866                 | 0.9966                 | 0.9922 |
+| **EfficientNet-B1**   | 0.9916           | 0.9857               | 0.9947      | 0.9907 |
+
 
 
 ### The model weights, inference notebooks and visualized results can be found inside this [directory](https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/tree/main/common_task). 
