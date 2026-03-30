@@ -5,11 +5,13 @@
 ## Common Test I. Multi-Class Classification
 
 ### Dataset and Classes  
-The dataset consists of three types of lensing images:  
+The data includes gravitational lensing images categorized into three classes representing the substructures of the lensing galaxy::  
 
-- **No Substructure**  
-- **Sphere Substructure**  
-- **Vortex Substructure**  
+- **No Substructure**
+- **Cold Dark Matter** (Sphere Substructure)  
+- **Axion** (Vortex Substructure)
+  
+![image](https://github.com/user-attachments/assets/72ae3445-e491-4b10-bfd0-dd16ae931b8e)
 
 ### Preprocessing Approach  
 - Resized images to **256x256**, followed by center cropping to **224x224**.  
@@ -112,13 +114,11 @@ The results are measured based on the following parameters:
 
 <table>
   <tr>
-    <td align="center"><b> ROC_AUC </b><br></td>
-    <td align="center"><b> Training Curve </b><br></td>
+    <td align="center"><b> ROC_AUC plot </b><br></td>
     <td align="center"><b> Confusion Matrix </b><br></td>
   </tr>
   <tr>
-    <td align="center"><br><img src=""></td>
-    <td align="center"><br><img src=""></td>
-    <td align="center"><br><img src="" width="100%"></td>
+    <td align="center"><br><img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/specific_task/ROC_AUC/phy_classifier_2_roc_auc.png"></td>
+    <td align="center"><br><img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/specific_task/confusion_matrix/phy_classifier_2_cm.png" width="100%"></td>
   </tr>
 </table>
