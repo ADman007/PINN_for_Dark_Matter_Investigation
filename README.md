@@ -1,5 +1,6 @@
 # <p align="center"> ML4SCI_26 </p>
 ### DeepLense - Physics Guided Machine Learning on Real Lensing Images
+![image](https://github.com/user-attachments/assets/4c2f33d4-8ba2-46bc-83b9-eef6364b0cc4)
 ---
 ## Common Test I. Multi-Class Classification
 
@@ -98,7 +99,9 @@ The results are measured based on the following parameters:
 3. Classifier:
   * After reconstructing the source images, I use a pre-trained EfficientNet-b0 model solely on these reconstructed images.
   * The reconstructed images are passed through a dedicated encoder that performs the final classification task.
-  * By isolating the source morphology from the lensing effects, the model can more accurately categorize the underlying astronomical objects based on their true physical structure. 
+  * By isolating the source morphology from the lensing effects, the model can more accurately categorize the underlying astronomical objects based on their true physical structure.
+
+![image](https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/specific_task/reconstructed_images.png)
 
 ### Results 
 
