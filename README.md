@@ -103,22 +103,30 @@ The results are measured based on the following parameters:
   * The reconstructed images are passed through a dedicated encoder that performs the final classification task.
   * By isolating the source morphology from the lensing effects, the model can more accurately categorize the underlying astronomical objects based on their true physical structure.
 
-![image](https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/specific_task/reconstructed_images.png)
+![image](https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/specific_task/images/reconstructed_images.png)
 
 ### Results 
 
 #### AUC Scores  (in descending order of Macro AUC )
 | Model            | No Substructure | Sphere Substructure | Vortex Substructure | Macro AUC | 
 |-----------------|----------------|----------------------|----------------------|-------|
-| **Approach_1**   | 0.9990         | 0.9980                | 0.9998                 | 0.9989 |
+| **Approach_1**   | 0.9921         | 0.9867                | 0.9946                 | 0.9911 |
+| **Approach_2**   | 0.9990         | 0.9980                | 0.9998                 | 0.9989 |
+
+
+### GradCAM Visualization
+
+Grad-CAM is used to interpret the model by highlighting the regions of an image where the model is focusing to make its decision. Below is one such result for the GradCAM Visualization corresponding to the EfficientNet-B0 classifier for the approach_1.
+![image](https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/specific_task/images/GradCAM%20visualization.png)
+
 
 <table>
   <tr>
-    <td align="center"><b> ROC_AUC plot </b><br></td>
-    <td align="center"><b> Confusion Matrix </b><br></td>
+    <td align="center"><b> approach_1 </b><br></td>
+    <td align="center"><b> approach_2 </b><br></td>
   </tr>
   <tr>
-    <td align="center"><br><img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/specific_task/ROC_AUC/phy_classifier_2_roc_auc.png"></td>
-    <td align="center"><br><img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/specific_task/confusion_matrix/phy_classifier_2_cm.png" width="100%"></td>
+    <td align="center"><br><img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/specific_task/ROC_AUC/roc_auc_approach1.png"></td>
+    <td align="center"><br><img src="https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/specific_task/ROC_AUC/roc_auc_approach_2.png" width="100%"></td>
   </tr>
 </table>
