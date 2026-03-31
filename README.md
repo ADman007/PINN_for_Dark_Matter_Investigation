@@ -1,6 +1,6 @@
 # <p align="center"> ML4SCI_26 </p>
 ### DeepLense - Physics Guided Machine Learning on Real Lensing Images
-![image](https://github.com/user-attachments/assets/4c2f33d4-8ba2-46bc-83b9-eef6364b0cc4)
+![image](https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/specific_task/images/readme_banner_image.png)
 ---
 ## Common Test I. Multi-Class Classification
 
@@ -11,7 +11,7 @@ The data includes gravitational lensing images categorized into three classes re
 - **Cold Dark Matter** (Sphere Substructure)  
 - **Axion** (Vortex Substructure)
   
-![image](https://github.com/user-attachments/assets/72ae3445-e491-4b10-bfd0-dd16ae931b8e)
+![image](https://github.com/ADman007/PINN_for_Dark_Matter_Investigation/blob/main/specific_task/images/visualize_sample.png)
 
 ### Preprocessing Approach  
 - Resized images to **256x256**, followed by center cropping to **224x224**.  
